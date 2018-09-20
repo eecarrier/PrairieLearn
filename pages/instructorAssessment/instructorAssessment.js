@@ -593,7 +593,7 @@ var regradeAssessmentInstance = function(assessment_instance_id, locals, callbac
                         } else {
                             job.verbose('No changes made');
                         }
-                        ltiOutcomes.updateScore(assessment_instance_id, (err) => {
+                        ltiOutcomes.updateScore(assessment_instance_id, null, (err) => {
                             if (err) {
                                 job.fail(err);
                             } else {
@@ -682,7 +682,7 @@ var regradeAllAssessmentInstances = function(assessment_id, locals, callback) {
                                     msg += 'No changes made';
                                 }
                             }
-                            ltiOutcomes.updateScore(row.assessment_instance_id, (err) => {
+                            ltiOutcomes.updateScore(row.assessment_instance_id, null, (err) => {
                                 if (err) {
                                     msg += '\n' + 'ERROR updating score via LTI: ' + err.toString();
                                 }
