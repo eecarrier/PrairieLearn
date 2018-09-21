@@ -29,9 +29,19 @@
 
   * Add personal access token management (Nathan Walters).
 
+  * Add `maxPoints` option to zones (Tim Bretl).
+
+  * Add `bestQuestions` option to zones (Tim Bretl).
+
   * Add `allow-complex` attribute for `pl-symbolic-input` (Tim Bretl).
 
   * Add more question and assessment JSON validity checking on load (Dave Mussulman).
+
+  * Add warm up for Python worker processes (Matt West).
+
+  * Add better handling of client sockets on externally graded questions (Nathan Walters).
+
+  * Add postgresql permissions for root in Docker for development (Dave Mussulman).
 
   * Fix `pl-file-editor` to allow display empty text editor and add option to include text from source file (Mariana Silva).
 
@@ -79,6 +89,12 @@
 
   * Fix spurious `warnOldJobs` log entries (Matt West).
 
+  * Fix label on `pl-string-input` help popover (Matt West).
+
+  * Fix restart of Python `codeCallers` with no active child (Matt West).
+
+  * Fix exampleCourse exam1 to include formula sheet example per docs (Dave Mussulman).
+
   * Change `pl-code` to display code from a source file OR inline text (Mariana Silva).
 
   * Change element names to use dashes instead of underscores (Nathan Walters).
@@ -104,6 +120,10 @@
   * Change to prohibit extra `allowAccess` properties (Geoffrey Challen).
 
   * Change maximum JSON POST size to 1MB or local grader (Nathan Walters).
+
+  * Change required package versions for security (Dave Mussulman).
+
+  * Change `allowIssueReporting` to default to `true` (Matt West).
 
   * Remove `element_index` from list of arguments passed to elements (Tim Bretl).
 
